@@ -37,10 +37,15 @@
             padding-right: 30px;}
 
         #fyi {
+            display: inline-block;
             font-family:Courier;
             font-size:15px;
-            
-            padding: 30px;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 20px;
+            margin: 30px;
+            float: right;
+        
         }
         
         @media(max-width:1000px) {
@@ -50,12 +55,33 @@
             .img {padding-top: 15px;
                 padding-bottom: 15px;}
                     }
-    
+        input[type=button] {
+        background-color: black;
+        border: none;
+        color:white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 10px 10px;
+        cursor:pointer;
+        text-align: center;
+        display: inline;
+        }
     </style>
 </head>
 
 <body>
     <H1 id="web"><a href="index.html" title="목차">WEB</a></H1>
+
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor ='grey';
+    document.querySelector('body').style.color='white';
+    ">
+
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor ='white';
+    document.querySelector('body').style.color='black';
+    ">     
+
     <div id="click">&lt;Click the Image></div>
     <div id="grid2">
         <div class="img"><a href="1.html"><img src="HTML.png" alt="Html information" style="width: 200;"></a></div>
@@ -69,7 +95,7 @@
 </div>     
     <div id="fyi">
         <H3>For Your Information..</H3>
-        <P>Hi there, My name is <strong><u>Jiin</u></strong>.
+        Hi there, My name is <strong><u>Jiin</u></strong>.
 
         <br>I am a future web developer.
         <br>This is very interesting to be hoenst.

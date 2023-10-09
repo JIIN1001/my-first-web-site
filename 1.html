@@ -3,12 +3,37 @@
 <head><title>My first html</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+        input[type=button] {
+        background-color: black;
+        border: none;
+        color:white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 10px 10px;
+        cursor:pointer;
+        text-align: center;
+        display: inline;}
+    </style>
 </head>
 
 <body>
     <H1 id="web"><a href="index.html" title="목차">WEB</a></H1>
-<div id="grid">
-    <div id="navigation">
+
+        
+    <div id="grid">
+            
+        <div id="navigation">
+            
+            <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor ='grey';
+            document.querySelector('body').style.color='white';
+            ">
+        
+            <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor ='white';
+            document.querySelector('body').style.color='black';
+            ">     
         <ol>
         <li><a id="now" href="1.html" title = "HTML">HTML</a></li>
         <li><a href="2.html" title = "CSS">CSS</a></li>
