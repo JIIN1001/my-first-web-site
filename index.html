@@ -3,27 +3,77 @@
  
 <head><title>Welcome</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #grid2 {display: grid;
+            grid-template-columns: 33% 33% 33%;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border: 15px solid pink;
+            border-top: none;}
+
+
+        
+        .img {display: block;
+            margin: auto;
+            width: fit-content;}
+
+        body {margin:0;}
+
+        #web {
+            border-bottom: none;}
+
+        #click {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: pink;
+            font-family: Courier;
+            ;
+        }
+
+        #article-index { 
+            padding-left: 30px;
+            padding-right: 30px;}
+
+        #fyi {
+            font-family:Courier;
+            font-size:15px;
+            
+            padding: 30px;
+        }
+        
+        @media(max-width:1000px) {
+            #grid2 {display: block;
+                    border:none;
+                    border-bottom: 20px solid pink;}
+            .img {padding-top: 15px;
+                padding-bottom: 15px;}
+                    }
+    
+    </style>
 </head>
 
 <body>
-    <H1><a href="index.html" title="목차">WEB</a></H1>
-    <ol>
-        <li><a href="1.html" title = "HTML">HTML</a></li>
-        <li><a href="2.html" title = "CSS">CSS</a></li>
-        <li><a href="3.html" title = "Javascript">JAVASCRIPT</a></li>
-    </ol>
+    <H1 id="web"><a href="index.html" title="목차">WEB</a></H1>
+    <div id="click">&lt;Click the Image></div>
+    <div id="grid2">
+        <div class="img"><a href="1.html"><img src="HTML.png" alt="Html information" style="width: 200;"></a></div>
+        <div class="img"><a href="2.html"><img src="CSS.png" alt="CSS information" style="width: 150px;"></a></div>
+        <div class="img"><a href="3.html"><img src="JS.jpg" alt="JavaScript information" style="width: 320px;"></a></div>
+    </div>
+<div id="article-index">
+    <h2><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target = "_blank" title="WEB에 대하여 알아보기">What is WEB?</a></h2>
+    <P class="content">The World Wide Web (WWW), commonly known as the Web, is an information system that enables information sharing over the Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists.[1] It allows documents and other web resources to be accessed over the Internet according to specific rules of the Hypertext Transfer Protocol (HTTP).[2]
+        <br><br>Documents and downloadable media are made available to the network through web servers and can be accessed by programs such as web browsers. Servers and resources on the World Wide Web are identified and located through character strings called uniform resource locators (URLs). The original and still very common document type is a web page formatted in Hypertext Markup Language (HTML). This markup language supports plain text, images, embedded video and audio contents, and scripts (short programs) that implement complex user interaction. <br><br>The HTML language also supports hyperlinks (embedded URLs) which provide immediate access to other web resources. Web navigation, or web surfing, is the common practice of following such hyperlinks across multiple websites. Web applications are web pages that function as application software. The information in the Web is transferred across the Internet using the Hypertext Transfer Protocol (HTTP).</P>
+</div>     
+    <div id="fyi">
+        <H3>For Your Information..</H3>
+        <P>Hi there, My name is <strong><u>Jiin</u></strong>.
 
-    <h2><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target = "_blank" title="WEB에 대하여 알아보기">WEB이란 무엇인가</a></h2>
-    <P>The World Wide Web (WWW), commonly known as the Web, is an information system that enables information sharing over the Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists.[1] It allows documents and other web resources to be accessed over the Internet according to specific rules of the Hypertext Transfer Protocol (HTTP).[2]
-        Documents and downloadable media are made available to the network through web servers and can be accessed by programs such as web browsers. Servers and resources on the World Wide Web are identified and located through character strings called uniform resource locators (URLs). The original and still very common document type is a web page formatted in Hypertext Markup Language (HTML). This markup language supports plain text, images, embedded video and audio contents, and scripts (short programs) that implement complex user interaction. The HTML language also supports hyperlinks (embedded URLs) which provide immediate access to other web resources. Web navigation, or web surfing, is the common practice of following such hyperlinks across multiple websites. Web applications are web pages that function as application software. The information in the Web is transferred across the Internet using the Hypertext Transfer Protocol (HTTP).</P>
-    <H3>*INFO</H3>
-    My name is <strong><u>Jiin.</u></strong> 
-
-    <p>I am a future web developer.</p>
-
-    <p style="margin-top:45px;">This is very interesting to be hoenst.<br><br><br>
-    It possilby will give me a satisfying job in the future.<br>
-    Please keep it up and move forward.<br>
-    You can do it!</p>
-    <p><img src="ondal.png" width="100%"></p>
+        <br>I am a future web developer.
+        <br>This is very interesting to be hoenst.
+        <br>Let us keep it up and move forward.
+        <br>We can do it!</p>
+    </div>
 </body>
