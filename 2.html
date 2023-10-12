@@ -10,6 +10,36 @@
     <H1 id="web"><a href="index.html" title="목차">WEB</a></H1>
 <div id="grid">
     <div id="navigation">
+        <input id="day_night" type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if (this.value === 'night') {
+                target.style.backgroundColor ='grey';
+                target.style.color='white';
+                this.value = 'day';
+            
+                var alist = document.querySelectorAll('a');
+                i = 0;
+                while(i < alist.length) {
+                    alist[i].style.color = 'white';
+                    i = i + 1;            
+                }     
+                        }
+            else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                this.value = 'night';
+            
+            
+                var alist = document.querySelectorAll('a');
+                i = 0;
+                while(i < alist.length) {
+                    alist[i].style.color = 'black';
+                    i = i + 1;
+                }
+            }
+      
+            ">
+        
         <ol>
         <li><a href="1.html" title = "HTML">HTML</a></li>
         <li><a id="now" href="2.html" title = "CSS">CSS</a></li>

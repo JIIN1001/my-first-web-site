@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        Hello javascript
+        <input id="night_day" type="button" value="night" onclick="
+            if(document.querySelector('#night_day').value === 'night') {
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('#night_day').value = 'day';
+                document.querySelector('body').style.color = 'yellow';
+            }   else {
+                document.querySelector('body').style.backgroundColor = 'white';
+                document.querySelector('body').style.color = 'black';
+                document.querySelector('#night_day').value = 'night';
+            }
+            ">
+    <H2>Array</H2>
+    <script> var family = ["Yeongsuk", "Jiin", "Taeon", "Dally"]
+    document.write(family[2]);
+    </script>
+    
+
+
+    <h2>add</h2>
+    <script>
+        family.push("kiwi");
+        family.push('baby');
+    </script>
+
+    <h2>count</h2>
+    <script>  
+        document.write(family.length);
+    </script>
+
+    <h2>Loop & Array</h2>
+    <script>
+        var family = ['Jiin', 'Yeongsuk', 'Taeon', 'Dally', 'Minju'];
+    </script>
+    <h3>my family</h3>
+    <ul>
+        <script>
+            var i = 0;
+            while(i<family.length) {
+            document.write('<li><a href="http://www.naver.com">'+family[i]+'</a></li>');
+            i = i+1;}
+            
+            </script>
+        <hr>
+        <li>Jiin</li>
+        <li>Yeongsuk</li>
+        <li>Taeon</li>
+        <li>Dally</li>
+        <li>Minju</li>
+    </ul>
+</body>
+</html> 
